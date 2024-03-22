@@ -58,5 +58,16 @@ Lastly, I changed the data types of the playoffs and result columns to boolean.
   frameborder="0"
 ></iframe>
 
+<iframe
+  src="assets/killsat15.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+As we can see in both of the above graphs, for golddiffat15, the data is normally distributed for both winners and loser with the losers being shifted more towards the left end and the winners being shifted more towards the right end. The graph for killsat15 has a moderate right skew with the kill counts trailing a bit farther for the winners than the losers. This means that on average, the winners of each match tend to have more kills at the 15 minutes mark. 
+
 ### Bivariate Analysis
+
+
 ### Interesting Aggregates
