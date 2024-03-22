@@ -15,13 +15,19 @@ Fan Engagement: Fans and viewers often engage with statistical analyses and pred
 ### Relevant Columns
 league
 : Identifies the league of the match (LCK or LEC), indicating the regional competition.
+
 result
 : The match outcome (win or loss), serving as the target variable for predictive modeling.
+
 firsttower
 : Indicates whether the team secured the first tower of the game, a binary metric reflecting early-game objectives.
+
 golddiffat15
 : The gold difference between the teams at 15 minutes, serving as a numerical indicator of early-game economic advantage.
+
 totalgold
 : Total gold earned by the team throughout the match, representing overall economic resources.
+
 kills
 : The total number of kills secured by the team, reflecting the team's aggressiveness and success in combat.
+
