@@ -268,3 +268,9 @@ firstblood (Nominal)
 ### Performance
 The performance of the model is evaluated using the F1 Score, which is a harmonic mean of precision and recall. The F1 Score for this model is approximately 0.714, indicating a balance between precision and recall. This score suggests that the model is reasonably effective in identifying wins based on the provided features but leaves room for improvement. Although the model has a moderately good F1 Score, it has too few features and hasn't been optimized enough to reach an ideal F1 Score.
 ### Graph
+<iframe
+  src="assets/baselinegraph.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
