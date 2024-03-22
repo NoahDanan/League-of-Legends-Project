@@ -1,4 +1,4 @@
-# League-of-Legends-Project
+# League of Legends Project
 Data science project for my DSC 80 class at UCSD. It incorporates almost all the aspects of the data science life cycle that we learned in class. My particular project was done using the League of Legends dataset from Oracle's Elixir public match data.
 
 By: Noah Danan
@@ -31,3 +31,17 @@ totalgold
 kills
 : The total number of kills secured by the team, reflecting the team's aggressiveness and success in combat.
 
+## Data Cleaning and Exploratory Data Analysis
+### Data Cleaning
+#### Filter for Teams
+I first filtered out all the player stats by keeping only rows in the dataframe where 'position' was set to 'team.'
+#### Correct Data Types
+I then changed the appropriate data from strings to datetime objects so that I could use time-series analysis if needed.
+#### Dropped Impossible Rows
+I also looked through some of the data and dropped rows where data didn't make sense in the context of a LoL match, i.e. dropping any row where gold earned, total gold, and/or kills was less than zero.
+#### Encoding Categorical Variables
+Lastly, I changed the data types of the playoffs and result columns to boolean
+
+### Univariate Analysis
+### Bivariate Analysis
+### Interesting Aggregates
