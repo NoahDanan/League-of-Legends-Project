@@ -251,3 +251,10 @@ Given the p-value of 0.0, we reject the null hypothesis that there is no differe
 Given the p-value of 0.0001, we reject the null hypothesis that there is no difference in the mean deathsat15 between teams from the LCK and LEC regions. There is statistically significant evidence to suggest a difference in early game fatalities between these regions, implying that the gameplay strategies, risk tolerance, or player behaviors might differ significantly between LCK and LEC teams. Specifically, the negative observed difference suggests that LEC teams, on average, manage to secure safer early game conditions leading to fewer deaths compared to LCK teams.
 
 ## Framing a Prediction Problem
+### Problem Identification
+Objective: To predict the outcome of a LoL game (win or lose) for a team based on early-game metrics and possibly other relevant features.
+Type: Binary classification
+Repsonse Variable: 'result' column as it determines who won the match (most simple determinant of skill)
+Metric: F1 score (balance between recall and accuracy)
+
+## Baseline Model
