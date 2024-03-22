@@ -42,13 +42,54 @@ I also looked through some of the data and dropped rows where data didn't make s
 #### Encoding Categorical Variables
 Lastly, I changed the data types of the playoffs and result columns to boolean.
 #### Cleaned Dataframe Head
-| gameid                | league   | result   |   kills |   totalgold |
-|:----------------------|:---------|:---------|--------:|------------:|
-| ESPORTSTMNT01_2690210 | LCKC     | False    |       9 |       47070 |
-| ESPORTSTMNT01_2690210 | LCKC     | True     |      19 |       52617 |
-| ESPORTSTMNT01_2690219 | LCKC     | False    |       3 |       57629 |
-| ESPORTSTMNT01_2690219 | LCKC     | True     |      16 |       71004 |
-| 8401-8401_game_1      | LPL      | True     |      13 |       45468 |
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>gameid</th>
+      <th>league</th>
+      <th>result</th>
+      <th>kills</th>
+      <th>totalgold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ESPORTSTMNT01_2690210</td>
+      <td>LCKC</td>
+      <td>False</td>
+      <td>9</td>
+      <td>47070</td>
+    </tr>
+    <tr>
+      <td>ESPORTSTMNT01_2690210</td>
+      <td>LCKC</td>
+      <td>True</td>
+      <td>19</td>
+      <td>52617</td>
+    </tr>
+    <tr>
+      <td>ESPORTSTMNT01_2690219</td>
+      <td>LCKC</td>
+      <td>False</td>
+      <td>3</td>
+      <td>57629</td>
+    </tr>
+    <tr>
+      <td>ESPORTSTMNT01_2690219</td>
+      <td>LCKC</td>
+      <td>True</td>
+      <td>16</td>
+      <td>71004</td>
+    </tr>
+    <tr>
+      <td>8401-8401_game_1</td>
+      <td>LPL</td>
+      <td>True</td>
+      <td>13</td>
+      <td>45468</td>
+    </tr>
+  </tbody>
+</table>
 ### Univariate Analysis
 
 <iframe
@@ -95,4 +136,6 @@ From the data above we are able to see what level these different leagues tend t
 
 ## Asssessment of Missingness
 ### NMAR Analysis
-For the Not Missing as Random (NMAR) analysis, upon examining the missingness of all the columns I believe the URL column's missingness is NMAR mostly because it was missing at a rate just shy of 85% which caught my attention.
+For the Not Missing as Random (NMAR) analysis, upon examining the missingness of all the columns I believe the URL column's missingness is NMAR mostly because it was missing at a rate just shy of 85% which caught my attention. I then procede to test for missingness dependency on a few columns one of which being URL as seen below.
+### Missingness Dependency
+
