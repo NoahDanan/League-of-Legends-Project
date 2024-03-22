@@ -221,4 +221,12 @@ From the data above we are able to see what level these different leagues tend t
 ### NMAR Analysis
 For the Not Missing as Random (NMAR) analysis, upon examining the missingness of all the columns I believe the URL column's missingness is NMAR mostly because it was missing at a rate just shy of 85% which caught my attention. I then procede to test for missingness dependency on a few columns one of which being URL as seen below.
 ### Missingness Dependency
+#### NMAR Analysis Graph
+
+#### Dependency on 'league' (NMAR Example):
+P-value: 0.0 (or extremely close to zero)
+Interpretation: There's a statistically significant association between the missingness of 'url' data and the 'league' category. This suggests that the likelihood of 'url' data being missing is not uniform across leagues and could vary significantly from one league to another. This might reflect differences in data collection practices, the availability of resources, or the priority given to online content in different leagues.
+#### Dependency on 'oceans' (MAR Example):
+P-value: 0.9010854527992864
+Interpretation: Unlike 'league' and 'year', the association between 'url' missingness and the 'oceans' variable is not statistically significant, given the high p-value. This suggests that the presence or absence of 'url' data does not depend on the 'oceans' variable within your dataset. The missingness of 'url' data appears to be independent of the 'oceans' column, indicating no systemic pattern linking these two.
 
