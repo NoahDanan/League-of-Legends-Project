@@ -310,3 +310,31 @@ The Final Model achieved an F1 Score of 0.8286, which represents an improvement 
   height="600"
   frameborder="0"
 ></iframe>
+## Fairness Analysis
+### Group X and Group Y:
+#### Group X (LEC): 
+Represents teams from the League of Legends European Championship.
+#### Group Y (LCK): 
+Represents teams from the League of Legends Champions Korea.
+### Evaluation Metric:
+The chosen evaluation metric is precision. Precision measures the ratio of correctly predicted positive observations (wins) to the total predicted positives, providing insight into the model's accuracy when it predicts a win.
+
+### Null and Alternative Hypotheses:
+#### Null Hypothesis (H~0): 
+There is no difference in the precision of predicting match outcomes between LEC and LCK teams. This suggests that the model's predictive accuracy is similar across these two regions.
+
+#### Alternative Hypothesis (H~A): 
+There is a difference in the precision of predicting match outcomes between LEC and LCK teams. This suggests that the model's predictive accuracy varies between these two regions, potentially due to differences in playstyle, competitiveness, or other factors.
+
+### Choice of Test Statistic and Significance Level:
+#### Test Statistic: 
+The absolute difference in precision between LEC and LCK teams.
+#### Significance Level (α): A significance level of 0.05 is used. This level represents a 5% risk of concluding that a difference exists when there is no actual difference.
+
+### Resulting p-value:
+P-value: 0.814
+
+### Conclusion:
+Given the p-value of 0.814, which is substantially higher than the typical significance level of 0.05, we fail to reject the null hypothesis. This result suggests that there is not enough statistical evidence to conclude a significant difference in the precision of predicting match outcomes between teams from the LEC and LCK regions. The observed difference in precision (approximately 1.86%) appears to be within the range of variability expected by chance alone.
+
+This conclusion implies that, according to the model's performance and the evaluation metric of precision, the predictive accuracy regarding match outcomes does not significantly vary between these highly competitive regions. It reflects that any perceived differences in gameplay or strategy between the LEC and LCK do not markedly affect the model's ability to predict outcomes accurately in the early stages of international competitions or matchups involving these teams.
