@@ -33,7 +33,7 @@ kills
 
 ## Data Cleaning and Exploratory Data Analysis
 ### Data Cleaning
-#### Filter for Teams
+#### Filter for Teams (Applied Starting with Hypothesis Test)
 I first filtered out all the player stats by keeping only rows in the dataframe where 'position' was set to 'team.'
 #### Correct Data Types
 I then changed the appropriate data from strings to datetime objects so that I could use time-series analysis if needed.
