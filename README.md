@@ -83,12 +83,12 @@ As we can see in both of the above graphs, for golddiffat15, the data is normall
 Looking at the boxplot above we can see that for the losers (false) the plot is similar to the winners (true), except it is shifted down and the tail end of the majority of the outliers are skewed towards the x-axis where as it is the opposite case for the winners box plot.
 
 ### Interesting Aggregates
-|   ('assists', 2022) |   ('assists', 2023) |   ('deaths', 2022) |   ('deaths', 2023) |   ('golddiffat15', 2022) |   ('golddiffat15', 2023) |   ('kills', 2022) |   ('kills', 2023) |
-|--------------------:|--------------------:|-------------------:|-------------------:|-------------------------:|-------------------------:|------------------:|------------------:|
-|               33.86 |                   0 |              14.26 |                  0 |                        0 |                        0 |             14.24 |                 0 |
-|               34.84 |                   0 |              14.6  |                  0 |                        0 |                        0 |             14.58 |                 0 |
-|               39.19 |                   0 |              18.64 |                  0 |                        0 |                        0 |             18.61 |                 0 |
-|               33.77 |                   0 |              16.27 |                  0 |                        0 |                        0 |             16.17 |                 0 |
-|               32.49 |                   0 |              14.68 |                  0 |                        0 |                        0 |             14.64 | 
+| league   |   ('assists', 2022) |   ('assists', 2023) |   ('deaths', 2022) |   ('deaths', 2023) |   ('golddiffat15', 2022) |   ('golddiffat15', 2023) |   ('kills', 2022) |   ('kills', 2023) |
+|:---------|--------------------:|--------------------:|-------------------:|-------------------:|-------------------------:|-------------------------:|------------------:|------------------:|
+| CBLOL    |               33.86 |                   0 |              14.26 |                  0 |                        0 |                        0 |             14.24 |                 0 |
+| CBLOLA   |               34.84 |                   0 |              14.6  |                  0 |                        0 |                        0 |             14.58 |                 0 |
+| CDF      |               39.19 |                   0 |              18.64 |                  0 |                        0 |                        0 |             18.61 |                 0 |
+| CT       |               33.77 |                   0 |              16.27 |                  0 |                        0 |                        0 |             16.17 |                 0 |
+| DCup     |               32.49 |                   0 |              14.68 |                  0 |                        0 |                        0 |             14.64 |                 0 |
 
 From the data above we are able to see what level these different leagues tend to perform given their main stats. For the most part, there aren't any outliears even when looking at the full table.
