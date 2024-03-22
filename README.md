@@ -274,3 +274,39 @@ The performance of the model is evaluated using the F1 Score, which is a harmoni
   height="600"
   frameborder="0"
 ></iframe>
+
+## Final Model
+### Features Added
+#### Early Game Control: 
+Calculated as the sum of firsttower, golddiffat15, and kills. This feature encapsulates the early game advantages that are crucial in determining the momentum and eventual outcomes of matches. Securing the first tower and achieving a gold lead or more kills within the first 15 minutes can significantly impact a team's map control and resource allocation. This composite feature is designed to capture the multifaceted nature of early game success beyond simple gold differences.
+
+#### Economic Efficiency: 
+Defined as the ratio of golddiffat15 to totalgold. This feature reflects how effectively a team leverages its available resources to create advantages. A higher economic efficiency indicates that a team is not just accumulating gold but is doing so more effectively relative to its total gold, potentially highlighting superior strategic resource management. By focusing on the efficiency of gold use, this feature aims to provide insights into the quality of team play and decision-making.
+
+These features were chosen based on the premise that success in League of Legends is not merely about accumulating resources (like gold) but also about how those resources are secured and utilized within the early stages of the game. The incorporation of these features is expected to enrich the model with insights into strategic aspects of gameplay that are not captured by raw statistics alone.
+
+### Modeling Algorithm and Hyperparameters:
+Modeling Algorithm and Hyperparameters:
+The chosen modeling algorithm is the Random Forest Classifier, a robust ensemble method that combines multiple decision trees to improve prediction accuracy and control overfitting. Random forests are particularly suitable for this task due to their ability to handle nonlinear relationships and their robustness to outliers, making them well-suited for complex datasets like those seen in esports analytics.
+
+#### The best-performing hyperparameters were:
+
+#### n_estimators: 
+200 - indicating the model used 200 trees, providing a good balance between computational efficiency and the ability to capture complex patterns in the data.
+#### max_depth: 
+None - allowing trees to grow without restriction, which is appropriate given the complexity of interactions in the data.
+#### min_samples_split: 
+2 - the minimum number of samples required to split an internal node, set to the lowest value to capture detailed patterns at the risk of higher variance.
+
+These hyperparameters were selected using GridSearchCV, which systematically explored a range of values for each parameter, evaluating model performance via cross-validation on the training set. This approach ensures that the chosen parameters are robust and conducive to generalization.
+
+### Performance Improvement Over Baseline Model
+The Final Model achieved an F1 Score of 0.8286, which represents an improvement over the Baseline Model's performance. This improvement can be attributed to the addition of strategically relevant features that capture aspects of gameplay directly linked to match outcomes, as well as the fine-tuning of the model's hyperparameters to better adapt to the nuances of the data. By incorporating both raw statistical measures and derived strategic insights, the model can make more informed predictions, enhancing its ability to distinguish between winning and losing scenarios.
+
+### Graph
+<iframe
+  src="assets/finalgraph.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
