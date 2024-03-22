@@ -235,3 +235,19 @@ Interpretation: There's a statistically significant association between the miss
 P-value: 0.9010854527992864
 Interpretation: Unlike 'league' and 'year', the association between 'url' missingness and the 'oceans' variable is not statistically significant, given the high p-value. This suggests that the presence or absence of 'url' data does not depend on the 'oceans' variable within your dataset. The missingness of 'url' data appears to be independent of the 'oceans' column, indicating no systemic pattern linking these two.
 
+## Hypothesis Testing
+Null Hypothesis: There is no difference in the mean golddiffat15 (will test other stats as well) between teams from the LCK and LEC regions, suggesting similar skill levels.
+Alternative Hypothesis: There is a difference in the mean golddiffat15 between teams from the LCK and LEC regions, suggesting differing skill levels.
+
+For my testing, I used a permutation test with a difference in means as the statistic. There is also an assumed significance level of 0.05 which is typically standard. 
+
+### Conclusion for golddiffat15
+Given the p-value of 1.0, we fail to reject the null hypothesis. This means that there is no statistical evidence to suggest a difference in the mean golddiffat15 between teams from the LCK and LEC regions based on the data analyzed. It's important to note that this does not prove the null hypothesis is true; rather, it indicates that, according to this specific measure of early game performance, the skill levels between these two regions cannot be distinguished.
+
+### Conclusion for DPM (Damage Per Minute)
+Given the p-value of 0.0, we reject the null hypothesis that there is no difference in the mean dpm between teams from the LCK and LEC regions. There is statistically significant evidence to suggest a difference, implying that the skill levels or gameplay strategies related to damage output may differ between these regions. The negative observed difference in means further suggests that LEC teams, on average, have a higher dpm compared to LCK teams.
+
+### Conclusion for deathsat15
+Given the p-value of 0.0001, we reject the null hypothesis that there is no difference in the mean deathsat15 between teams from the LCK and LEC regions. There is statistically significant evidence to suggest a difference in early game fatalities between these regions, implying that the gameplay strategies, risk tolerance, or player behaviors might differ significantly between LCK and LEC teams. Specifically, the negative observed difference suggests that LEC teams, on average, manage to secure safer early game conditions leading to fewer deaths compared to LCK teams.
+
+## Framing a Prediction Problem
