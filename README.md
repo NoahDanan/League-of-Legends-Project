@@ -13,9 +13,15 @@ Competitive Integrity: Fairness in predictive analytics ensures that insights de
 Strategic Development: Teams and organizations can leverage fair and accurate models to develop strategies, scout talent, and analyze opponents, promoting a higher level of play and innovation within the game.
 Fan Engagement: Fans and viewers often engage with statistical analyses and predictions as part of their viewing experience. Ensuring the accuracy and fairness of these predictions enhances the engagement and trust of the community.
 ### Relevant Columns
-league: Identifies the league of the match (LCK or LEC), indicating the regional competition.
-result: The match outcome (win or loss), serving as the target variable for predictive modeling.
-firsttower: Indicates whether the team secured the first tower of the game, a binary metric reflecting early-game objectives.
-golddiffat15: The gold difference between the teams at 15 minutes, serving as a numerical indicator of early-game economic advantage.
-totalgold: Total gold earned by the team throughout the match, representing overall economic resources.
-kills: The total number of kills secured by the team, reflecting the team's aggressiveness and success in combat.
+league
+: Identifies the league of the match (LCK or LEC), indicating the regional competition.
+result
+: The match outcome (win or loss), serving as the target variable for predictive modeling.
+firsttower
+: Indicates whether the team secured the first tower of the game, a binary metric reflecting early-game objectives.
+golddiffat15
+: The gold difference between the teams at 15 minutes, serving as a numerical indicator of early-game economic advantage.
+totalgold
+: Total gold earned by the team throughout the match, representing overall economic resources.
+kills
+: The total number of kills secured by the team, reflecting the team's aggressiveness and success in combat.
