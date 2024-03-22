@@ -50,11 +50,13 @@ Lastly, I changed the data types of the playoffs and result columns to boolean.
 | ESPORTSTMNT01_2690219 | LCKC     | True     |      16 |       71004 |
 | 8401-8401_game_1      | LPL      | True     |      13 |       45468 |
 ### Univariate Analysis
+
 <iframe
   src="assets/golddiffat15.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
+
 ### Bivariate Analysis
 ### Interesting Aggregates
