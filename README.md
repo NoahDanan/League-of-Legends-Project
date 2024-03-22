@@ -80,5 +80,6 @@ As we can see in both of the above graphs, for golddiffat15, the data is normall
   height="600"
   frameborder="0"
 ></iframe>
+Looking at the boxplot above we can see that for the losers (false) the plot is similar to the winners (true), except it is shifted down and the tail end of the majority of the outliers are skewed towards the x-axis where as it is the opposite case for the winners box plot.
 
 ### Interesting Aggregates
