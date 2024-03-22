@@ -42,13 +42,13 @@ I also looked through some of the data and dropped rows where data didn't make s
 #### Encoding Categorical Variables
 Lastly, I changed the data types of the playoffs and result columns to boolean.
 #### Cleaned Dataframe Head
-| gameid                | datacompleteness   | url                                         | league   |   year | playoffs   | date                |   game | position   | result   |   kills |   deaths |   assists |   firstblood |   firsttower |   oceans |     dpm |   totalgold |   earnedgold |   goldspent |   goldat15 |   golddiffat15 |   killsat15 |   assistsat15 |   deathsat15 |
-|:----------------------|:-------------------|:--------------------------------------------|:---------|-------:|:-----------|:--------------------|-------:|:-----------|:---------|--------:|---------:|----------:|-------------:|-------------:|---------:|--------:|------------:|-------------:|------------:|-----------:|---------------:|------------:|--------------:|-------------:|
-| ESPORTSTMNT01_2690210 | complete           | nan                                         | LCKC     |   2022 | False      | 2022-01-10 07:44:08 |      1 | team       | False    |       9 |       19 |        19 |            1 |            1 |        0 | 1981.09 |       47070 |        28222 |       44570 |      24806 |            107 |           5 |            10 |            6 |
-| ESPORTSTMNT01_2690210 | complete           | nan                                         | LCKC     |   2022 | False      | 2022-01-10 07:44:08 |      1 | team       | True     |      19 |        9 |        62 |            0 |            0 |        0 | 2799.02 |       52617 |        33769 |       45850 |      24699 |           -107 |           6 |            18 |            5 |
-| ESPORTSTMNT01_2690219 | complete           | nan                                         | LCKC     |   2022 | False      | 2022-01-10 08:38:24 |      1 | team       | False    |       3 |       16 |         7 |            0 |            0 |        0 | 1690.98 |       57629 |        34688 |       53945 |      23522 |          -1763 |           1 |             1 |            3 |
-| ESPORTSTMNT01_2690219 | complete           | nan                                         | LCKC     |   2022 | False      | 2022-01-10 08:38:24 |      1 | team       | True     |      16 |        3 |        39 |            1 |            1 |        0 | 2124.55 |       71004 |        48063 |       66410 |      25285 |           1763 |           3 |             3 |            1 |
-| 8401-8401_game_1      | partial            | https://lpl.qq.com/es/stats.shtml?bmid=8401 | LPL      |   2022 | False      | 2022-01-10 09:24:26 |      1 | team       | True     |      13 |        6 |        35 |            0 |          nan |      nan | 1762.02 |       45468 |        30167 |       36908 |        nan |            nan |         nan |           nan |          nan |
+| gameid                | league   | result   |   kills |   totalgold |
+|:----------------------|:---------|:---------|--------:|------------:|
+| ESPORTSTMNT01_2690210 | LCKC     | False    |       9 |       47070 |
+| ESPORTSTMNT01_2690210 | LCKC     | True     |      19 |       52617 |
+| ESPORTSTMNT01_2690219 | LCKC     | False    |       3 |       57629 |
+| ESPORTSTMNT01_2690219 | LCKC     | True     |      16 |       71004 |
+| 8401-8401_game_1      | LPL      | True     |      13 |       45468 |
 ### Univariate Analysis
 
 ### Bivariate Analysis
