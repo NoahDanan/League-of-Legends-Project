@@ -74,7 +74,6 @@ As we can see in both of the above graphs, for golddiffat15, the data is normall
   height="600"
   frameborder="0"
 ></iframe>
-
 <iframe
   src="assets/bikillvsdeathat15.html"
   width="800"
