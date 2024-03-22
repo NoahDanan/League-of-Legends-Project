@@ -92,3 +92,7 @@ Looking at the boxplot above we can see that for the losers (false) the plot is 
 | DCup     |               32.49 |                   0 |              14.68 |                  0 |                        0 |                        0 |             14.64 |                 0 |
 
 From the data above we are able to see what level these different leagues tend to perform given their main stats. For the most part, there aren't any outliears even when looking at the full table.
+
+## Asssessment of Missingness
+### NMAR Analysis
+For the Not Missing as Random (NMAR) analysis, upon examining the missingness of all the columns I believe the URL column's missingness is NMAR mostly because it was missing at a rate just shy of 85% which caught my attention.
